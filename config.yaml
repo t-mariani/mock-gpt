@@ -1,0 +1,21 @@
+dropout : 0.2
+block_size : 256
+n_embed : 384
+n_block : 6
+n_head : 6
+
+# Training
+batch_size : 8
+n_epoch : 2500
+eval_interval : 50
+log_each_n : 10
+
+# Optimizer 
+lr : 0.0003
+
+# Dataset 
+train_split: 0.9
+val_split: 0.05
+
+# Device 
+device : "auto" # depending on device, "cpu", "mps", "cuda" or "auto" to detect the best or None for base one "cpu"
